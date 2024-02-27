@@ -9,6 +9,8 @@ public class Meta {
     private Double valorMeta;
     private ArrayList<Meta> metas;
 
+    // TESTE COMMIT
+
     public Meta(String tipoMeta, String dataInicio,  String dataTermino, Double valorMeta){
         this.tipoMeta = tipoMeta;
         this.dataInicio = dataInicio;
