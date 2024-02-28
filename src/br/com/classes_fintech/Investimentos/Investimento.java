@@ -1,4 +1,4 @@
-package br.com.classes_fintech;
+package br.com.classes_fintech.Investimentos;
 
 public class Investimento {
     private String nomeDoInvestimento;

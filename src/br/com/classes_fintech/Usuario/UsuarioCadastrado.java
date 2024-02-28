@@ -1,7 +1,5 @@
-package br.com.classes_fintech;
-
+package br.com.classes_fintech.Usuario;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class UsuarioCadastrado extends CadastrarUsuario {
     private int idUsuario;
@@ -28,12 +26,6 @@ public class UsuarioCadastrado extends CadastrarUsuario {
             usuariosCadastrados.add(usuario);
             System.out.println("Usuário cadastrado com sucesso!");
         }
-    }
-
-    public void criarTransacao(GerenciadorDeTransacao transacao){
-        Scanner entrada = new Scanner(System.in);
-        System.out.println("Digite o valor da transação: ");
-
     }
 
 }

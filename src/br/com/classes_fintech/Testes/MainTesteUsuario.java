@@ -1,6 +1,6 @@
 package br.com.classes_fintech.Testes;
-import br.com.classes_fintech.CadastrarUsuario;
-import br.com.classes_fintech.UsuarioCadastrado;
+import br.com.classes_fintech.Usuario.CadastrarUsuario;
+import br.com.classes_fintech.Usuario.UsuarioCadastrado;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package br.com.classes_fintech;
+package br.com.classes_fintech.Transacoes;
 
 public class Transacao {
     private String categoria; //despesa ou receita

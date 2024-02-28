@@ -1,4 +1,6 @@
-package br.com.classes_fintech;
+package br.com.classes_fintech.Investimentos;
+
+import br.com.classes_fintech.Investimentos.Investimento;
 
 import java.util.ArrayList;
 

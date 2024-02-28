@@ -1,4 +1,4 @@
-package br.com.classes_fintech;
+package br.com.classes_fintech.Usuario;
 
 import java.util.Scanner;
 

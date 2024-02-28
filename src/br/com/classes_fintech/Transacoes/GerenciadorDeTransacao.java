@@ -1,4 +1,6 @@
-package br.com.classes_fintech;
+package br.com.classes_fintech.Transacoes;
+
+import br.com.classes_fintech.Transacoes.Transacao;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
