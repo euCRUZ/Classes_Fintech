@@ -1,23 +1,18 @@
 package br.com.classes_fintech.Entidades;
-
-
 public class Meta {
 
-    private int id;
+    //private int id;
     private String tipoMeta;
     private String dataInicio;
     private String dataTermino;
-    private Double valorMeta;
+    private double valorMeta;
+    //private static ArrayList<Meta> listaMetas = new ArrayList<Meta>();
 
-    public Meta() {
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getId() {
-        return id;
+    public Meta(String tipoMeta, String dataInicio, String dataTermino, double valorMeta) {
+        this.tipoMeta = tipoMeta;
+        this.dataInicio = dataInicio;
+        this.dataTermino = dataTermino;
+        this.valorMeta = valorMeta;
     }
 
     public String getTipoMeta() {
@@ -32,23 +27,9 @@ public class Meta {
         return dataTermino;
     }
 
-    public Double getValorMeta() {
+    public double getValorMeta() {
         return valorMeta;
     }
 
-    public void setTipoMeta(String tipoMeta) {
-        this.tipoMeta = tipoMeta;
-    }
 
-    public void setDataInicio(String dataInicio) {
-        this.dataInicio = dataInicio;
-    }
-
-    public void setDataTermino(String dataTermino) {
-        this.dataTermino = dataTermino;
-    }
-
-    public void setValorMeta(Double valorMeta) {
-        this.valorMeta = valorMeta;
-    }
 }

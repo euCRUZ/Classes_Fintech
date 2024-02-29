@@ -1,6 +1,6 @@
-package br.com.classes_fintech.Transacoes;
+package br.com.classes_fintech.CasoDeUso;
 
-import br.com.classes_fintech.Transacoes.Transacao;
+import br.com.classes_fintech.Entidades.Transacao;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -29,12 +29,12 @@ public class GerenciadorDeTransacao {
         }
     }
 
-//    public void mostrarTransacoesRecentes() {
-//        DecimalFormat df = new DecimalFormat("#.00");
-//        for (Transacao transacao : listaDeTransacoes) {
-//            System.out.println(transacao.getTipo() + " - " + transacao.getCategoria() + ": R$" + df.format(transacao.getValor()));
-//        }
-//    }
+    public void mostrarTransacoesRecentes() {
+        DecimalFormat df = new DecimalFormat("#.00");
+        for (Transacao transacao : listaDeTransacoes) {
+            System.out.println(transacao.getTipo() + " - " + transacao.getCategoria() + ": R$" + df.format(transacao.getValor()));
+        }
+    }
 
 
     public void mostrarDespesa() {

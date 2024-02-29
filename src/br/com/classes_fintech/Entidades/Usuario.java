@@ -1,14 +1,12 @@
-package br.com.classes_fintech.Usuario;
+package br.com.classes_fintech.Entidades;
 
-import java.util.Scanner;
-
-public class CadastrarUsuario {
+public class Usuario {
     private String nome;
     private String sobrenome;
     private String email;
     private String senha;
 
-    public CadastrarUsuario(String nome, String sobrenome, String email, String senha) {
+    public Usuario(String nome, String sobrenome, String email, String senha) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;

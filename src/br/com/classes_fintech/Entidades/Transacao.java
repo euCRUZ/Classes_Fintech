@@ -1,12 +1,14 @@
-package br.com.classes_fintech.Transacoes;
+package br.com.classes_fintech.Entidades;
 
-public class Transacao {
+import br.com.classes_fintech.CasoDeUso.GerenciadorDeTransacao;
+
+public class Transacao extends GerenciadorDeTransacao {
     private String categoria; //despesa ou receita
     private Double valor;
-    private String tipo;
+    private String tipoDaTransacao;
 
-    public Transacao(String tipo, String categoria, Double valor) {
-        this.tipo = tipo;
+    public Transacao(String tipoDaTransacao, String categoria, Double valor) {
+        this.tipoDaTransacao = tipoDaTransacao;
         this.categoria = categoria;
         this.valor = valor;
     }
