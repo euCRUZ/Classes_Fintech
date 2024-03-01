@@ -7,8 +7,8 @@ import java.util.ArrayList;
 
 public class GerenciadorDeTransacao {
 
-    public void criarTransacao(String receita_Ou_Despesa, String categoria, Double valor) {
-        Transacao transacao = new Transacao(receita_Ou_Despesa, categoria, valor);
+    public void criarTransacao( String categoria, Double valor) {
+        Transacao transacao = new Transacao(categoria, valor);
     }
 
 }
