@@ -18,10 +18,13 @@ public class Main {
 
 
         GerenciadorDeTransacao transacao_teste = new GerenciadorDeTransacao(listaDeTodasTransacoes,"Carro", 300.00);
-        GerenciadorDeTransacao transacao_teste2 = new GerenciadorDeTransacao(listaDeTodasTransacoes,"Celular", 500.00);
-        transacao_teste.exibirListaDeTransacao();
-        transacao_teste2.exibirListaDeTransacao();
+        GerenciadorDeTransacao transacao_teste2 = new GerenciadorDeTransacao(listaDeTodasTransacoes,"Celular", 5020.00);
+        GerenciadorDeTransacao transacao_teste3 = new GerenciadorDeTransacao(listaDeTodasTransacoes,"Celular", 5030.00);
+
+
         exibirTodasTransacoes(listaDeTodasTransacoes);
+        System.out.println("INDIVIDUAL");
+        transacao_teste2.exibirListaDeTransacao();
 
 
 
