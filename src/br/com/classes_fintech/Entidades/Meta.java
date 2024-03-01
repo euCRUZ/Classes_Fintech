@@ -1,4 +1,7 @@
 package br.com.classes_fintech.Entidades;
+
+import java.util.ArrayList;
+
 public class Meta {
 
     private String nomeMeta;
@@ -6,7 +9,7 @@ public class Meta {
     private String dataTermino;
     private double valorMeta;
 
-    public Meta(String nomeMeta, String dataInicio, String dataTermino, double valorMeta) {
+    public Meta(ArrayList<Meta> listaDeMetas, String nomeMeta, String dataInicio, String dataTermino, double valorMeta) {
         this.nomeMeta = nomeMeta;
         this.dataInicio = dataInicio;
         this.dataTermino = dataTermino;
