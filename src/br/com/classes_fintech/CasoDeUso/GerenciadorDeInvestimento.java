@@ -4,10 +4,16 @@ import br.com.classes_fintech.Entidades.Investimento;
 
 import java.util.ArrayList;
 
-public class GerenciadorDeInvestimento {
+public class GerenciadorDeInvestimento extends Investimento {
 
-    public void criarInvestimento(String nomeDoInvestimento, Double valor, String data, Double taxaDeAplicacao){
-        Investimento investimento = new Investimento(nomeDoInvestimento, valor, data, taxaDeAplicacao);
+
+
+    public GerenciadorDeInvestimento(String nomeDoInvestimento,
+                                     Double valor,
+                                     String data,
+                                     Double taxaDeAplicacao) {
+        super(nomeDoInvestimento, valor, data, taxaDeAplicacao);
     }
+
 
 }
