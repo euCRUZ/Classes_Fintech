@@ -6,7 +6,8 @@ public class Investimento {
     private String data;
     private Double taxaDeAplicacao;
 
-    public Investimento(String nomeDoInvestimento, Double valor, String data, Double taxaDeAplicacao) {
+    public Investimento(String nomeDoInvestimento, Double valor,
+                        String data, Double taxaDeAplicacao) {
         this.nomeDoInvestimento = nomeDoInvestimento;
         this.valor = valor;
         this.data = data;

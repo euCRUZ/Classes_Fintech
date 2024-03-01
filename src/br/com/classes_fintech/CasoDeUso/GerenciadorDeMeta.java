@@ -12,24 +12,16 @@ public class GerenciadorDeMeta extends Meta {
         listaDeMetas.add(this);
     }
 
-    public void exibirInformacoesMeta(ArrayList<Meta> listaDeMetas, String nomeMeta) {
+    public void exibirMeta(ArrayList<Meta> listaDeMetas, String nomeMeta) {
         for (Meta meta : listaDeMetas) {
             if (meta.getTipoMeta().equals(nomeMeta)) {
                 System.out.println("Nome da meta: " + meta.getTipoMeta());
                 System.out.println("Data de início: " + meta.getDataInicio());
                 System.out.println("Data de término: " + meta.getDataTermino());
                 System.out.println("Valor da meta: " + meta.getValorMeta());
+            } else {
+                System.out.println("Meta não encontrada");
             }
         }
     }
-
-    public void exibirListaDeMetas(ArrayList<Meta> listaDeMetas) {
-        for (Meta meta : listaDeMetas) {
-            System.out.println("\nNome da meta: " + meta.getTipoMeta());
-            System.out.println("Data de início: " + meta.getDataInicio());
-            System.out.println("Data de término: " + meta.getDataTermino());
-            System.out.println("Valor da meta: " + meta.getValorMeta());
-        }
-    }
-
 }

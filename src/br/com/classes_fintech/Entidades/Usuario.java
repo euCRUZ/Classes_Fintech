@@ -1,5 +1,7 @@
 package br.com.classes_fintech.Entidades;
 
+import java.util.ArrayList;
+
 public class Usuario {
     private String nome;
     private String sobrenome;
