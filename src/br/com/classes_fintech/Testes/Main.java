@@ -15,19 +15,8 @@ public class Main {
         ArrayList<Meta> listaDeMetas = new ArrayList<>();
         ArrayList<Investimento> listaDeInvestimentos = new ArrayList<>();
 
-        Usuario usuario = new Usuario("Carlos", "Silva", "carlossilva@gmail.com", "123456");
-        listaDeusuariosCadastrados.add(usuario);
 
-        Transacao transacao = new Transacao("Compra", "Carro", 200.000);
-        listaDeTransacoes.add(transacao);
 
-        Meta meta = new Meta("Carro", "01/01/2021", "01/01/2022", 200.000);
-        listaDeMetas.add(meta);
 
-        Investimento investimento = new Investimento("Poupança", 1000.00, "01/01/2021", 0.5);
-        listaDeInvestimentos.add(investimento);
-
-        GerenciadorDeInvestimento i1 = new GerenciadorDeInvestimento();
-        i1.adicionarInvestimento("Poupança", 1000.00, "01/01/2021", 0.5);
     }
 }
