@@ -1,6 +1,7 @@
 package br.com.classes_fintech.CasoDeUso;
 
 import br.com.classes_fintech.Entidades.Investimento;
+import br.com.classes_fintech.Entidades.Meta;
 
 import java.util.ArrayList;
 

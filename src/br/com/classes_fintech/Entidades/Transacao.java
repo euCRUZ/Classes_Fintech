@@ -16,6 +16,8 @@ public class Transacao {
     public Double getValor() {
         return valor;
     }
-
+    public String getCategoria() {
+        return categoria;
+    }
 
 }

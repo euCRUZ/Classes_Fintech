@@ -34,6 +34,8 @@ public class Main {
             System.out.println("A lista está vazia");
         } else {
             for (Transacao transacao : listaDeTodasTransacoes) {
+
+                System.out.println(transacao.getCategoria());
                 System.out.println(transacao.getValor());
             }
         }

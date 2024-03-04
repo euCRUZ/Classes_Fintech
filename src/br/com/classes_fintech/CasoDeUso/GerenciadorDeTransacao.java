@@ -17,6 +17,7 @@ public class GerenciadorDeTransacao extends Transacao {
             System.out.println("A lista está vazia");
         } else {
             for (Transacao transacao : listaDeTransacoes) {
+                System.out.println(transacao.getCategoria());
                 System.out.println(transacao.getValor());
             }
         }
