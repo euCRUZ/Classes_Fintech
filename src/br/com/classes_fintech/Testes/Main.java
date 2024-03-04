@@ -1,7 +1,6 @@
 package br.com.classes_fintech.Testes;
 
-import br.com.classes_fintech.CasoDeUso.GerenciadorDeInvestimento;
-import br.com.classes_fintech.CasoDeUso.GerenciadorDeTransacao;
+
 import br.com.classes_fintech.Entidades.Investimento;
 import br.com.classes_fintech.Entidades.Meta;
 import br.com.classes_fintech.Entidades.Transacao;
