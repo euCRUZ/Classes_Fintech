@@ -5,7 +5,7 @@ import br.com.classes_fintech.Entidades.Meta;
 import java.util.ArrayList;
 
 public class GerenciadorDeMeta extends Meta {
-    private ArrayList<Meta> listaDeMetas = new ArrayList<>();
+    ArrayList<Meta> listaDeMetas = new ArrayList<>();
 
     public GerenciadorDeMeta(ArrayList<Meta> listaDeMetas, String nomeMeta, String dataInicio, String dataTermino, double valorMeta) {
         super(listaDeMetas, nomeMeta, dataInicio, dataTermino, valorMeta);

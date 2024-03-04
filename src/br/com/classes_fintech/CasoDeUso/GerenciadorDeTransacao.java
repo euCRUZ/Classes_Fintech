@@ -12,8 +12,6 @@ public class GerenciadorDeTransacao extends Transacao {
         listaDeTodasTransacao.add(this);
     }
 
-
-
     public void adicionarItemNaListaDeTransacao() {
         if (listaDeTransacoes.isEmpty()) {
             System.out.println("A lista está vazia");
@@ -24,6 +22,7 @@ public class GerenciadorDeTransacao extends Transacao {
             }
         }
     }
+
     public void exibirListaDeTransacao() {
         if (listaDeTransacoes.isEmpty()) {
             System.out.println("A lista está vazia");

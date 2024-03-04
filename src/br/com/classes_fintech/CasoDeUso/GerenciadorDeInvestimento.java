@@ -14,6 +14,7 @@ public class GerenciadorDeInvestimento extends Investimento {
         listaDeInvestimento.add(this);
         listaDeTodosInvestimento.add(this);
     }
+
     public void exibirInvestimentos() {
         if (listaDeInvestimento.isEmpty()) {
             System.out.println("A lista está vazia");
@@ -26,4 +27,5 @@ public class GerenciadorDeInvestimento extends Investimento {
             }
         }
     }
+
 }

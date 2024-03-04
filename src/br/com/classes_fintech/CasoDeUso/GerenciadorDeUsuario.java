@@ -7,9 +7,11 @@ public class GerenciadorDeUsuario extends Usuario {
 
     ArrayList<Usuario> listaDeusuariosCadastrados = new ArrayList<>();
 
-    public GerenciadorDeUsuario(String nome, String sobrenome,
+    public GerenciadorDeUsuario(ArrayList<Usuario> listaDeTodosUsuariosCadastrados, String nome, String sobrenome,
                                 String email, String senha) {
-        super(nome, sobrenome, email, senha);
+        super(listaDeTodosUsuariosCadastrados, nome, sobrenome, email, senha);
+        listaDeusuariosCadastrados.add(this);
+        listaDeTodosUsuariosCadastrados.add(this);
 
     }
 
