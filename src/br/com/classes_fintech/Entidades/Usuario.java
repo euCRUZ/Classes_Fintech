@@ -16,14 +16,14 @@ public class Usuario {
     }
 
     public String getNome() {
-        return PrimeiraLetraMaiuscula(nome);
+        return primeiraLetraMaiuscula(nome);
     }
 
     public String getSobrenome() {
-        return PrimeiraLetraMaiuscula(sobrenome);
+        return primeiraLetraMaiuscula(sobrenome);
     }
 
-    private String PrimeiraLetraMaiuscula(String str) {
+    private String primeiraLetraMaiuscula(String str) {
         if(str == null || str.isEmpty()) {
             return str;
         } else {
