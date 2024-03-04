@@ -9,7 +9,7 @@ public class Meta {
     private String dataTermino;
     private double valorMeta;
 
-    public Meta(ArrayList<Meta> listaDeMetas, String nomeMeta, String dataInicio, String dataTermino, double valorMeta) {
+    public Meta(ArrayList<Meta> listaDeTodasMetas, String nomeMeta, String dataInicio, String dataTermino, double valorMeta) {
         this.nomeMeta = nomeMeta;
         this.dataInicio = dataInicio;
         this.dataTermino = dataTermino;

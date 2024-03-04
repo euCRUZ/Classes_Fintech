@@ -5,36 +5,25 @@ import java.util.ArrayList;
 
 public class GerenciadorDeUsuario extends Usuario {
 
-    ArrayList<Usuario> listaDeusuariosCadastrados = new ArrayList<>();
+    ArrayList<Usuario> listaDeusUsuariosCadastrados = new ArrayList<>();
 
-    public GerenciadorDeUsuario(ArrayList<Usuario> listaDeTodosUsuariosCadastrados, String nome, String sobrenome,
-                                String email, String senha) {
+    public GerenciadorDeUsuario(ArrayList<Usuario> listaDeTodosUsuariosCadastrados, String nome, String sobrenome, String email, String senha) {
         super(listaDeTodosUsuariosCadastrados, nome, sobrenome, email, senha);
-        listaDeusuariosCadastrados.add(this);
+        listaDeusUsuariosCadastrados.add(this);
         listaDeTodosUsuariosCadastrados.add(this);
 
     }
 
-    public void exibirUsuario(ArrayList<Usuario> lista, String usuario){
-        for (Usuario user : lista) {
-            if (user.getNome().equals(usuario)) {
-                System.out.println("Nome: " + user.getNome());
-                System.out.println("Sobrenome: " + user.getSobrenome());
-                System.out.println("Email: " + user.getEmail());
-                System.out.println("Senha: " + user.getSenha());
+    public void exibirUsuario(String usuarioNome){
+        for (Usuario usuario : listaDeusUsuariosCadastrados) {
+            if (usuario.getNome().equals(usuarioNome)) {
+                System.out.println("Nome: " + usuario.getNome());
+                System.out.println("Sobrenome: " + usuario.getSobrenome());
+                System.out.println("Email: " + usuario.getEmail());
+                System.out.println("Senha: " + usuario.getSenha() + "\n");
             } else {
                 System.out.println("Usuário não encontrado");
             }
         }
     }
-
-    public void exibirListaUsuarios(ArrayList<Usuario> lista){
-        for (Usuario user : lista) {
-            System.out.println("Nome: " + user.getNome());
-            System.out.println("Sobrenome: " + user.getSobrenome());
-            System.out.println("Email: " + user.getEmail());
-            System.out.println("Senha: " + user.getSenha());
-        }
-    }
-
 }

@@ -19,5 +19,4 @@ public class Transacao {
     public String getCategoria() {
         return categoria;
     }
-
 }
