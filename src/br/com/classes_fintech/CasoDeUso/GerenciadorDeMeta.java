@@ -14,8 +14,8 @@ public class GerenciadorDeMeta extends Meta {
 
     public void exibirMeta(ArrayList<Meta> listaDeMetas, String nomeMeta) {
         for (Meta meta : listaDeMetas) {
-            if (meta.getTipoMeta().equals(nomeMeta)) {
-                System.out.println("Nome da meta: " + meta.getTipoMeta());
+            if (meta.getNomeMeta().equals(nomeMeta)) {
+                System.out.println("Nome da meta: " + meta.getNomeMeta());
                 System.out.println("Data de início: " + meta.getDataInicio());
                 System.out.println("Data de término: " + meta.getDataTermino());
                 System.out.println("Valor da meta: " + meta.getValorMeta());

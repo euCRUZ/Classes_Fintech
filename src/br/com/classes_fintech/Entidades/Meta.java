@@ -16,7 +16,7 @@ public class Meta {
         this.valorMeta = valorMeta;
     }
 
-    public String getTipoMeta() {
+    public String getNomeMeta() {
         return nomeMeta;
     }
 
