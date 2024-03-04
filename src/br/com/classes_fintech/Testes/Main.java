@@ -1,6 +1,5 @@
 package br.com.classes_fintech.Testes;
 
-import br.com.classes_fintech.CasoDeUso.GerenciadorDeInvestimento;
 import br.com.classes_fintech.CasoDeUso.GerenciadorDeTransacao;
 import br.com.classes_fintech.Entidades.Investimento;
 import br.com.classes_fintech.Entidades.Meta;
@@ -17,27 +16,19 @@ public class Main {
         ArrayList<Investimento> listaDeInvestimentos = new ArrayList<>();
 
 
-        GerenciadorDeTransacao transacao_teste = new GerenciadorDeTransacao(listaDeTodasTransacoes,"Carro", 300.00);
-        GerenciadorDeTransacao transacao_teste2 = new GerenciadorDeTransacao(listaDeTodasTransacoes,"Celular", 5020.00);
-        GerenciadorDeTransacao transacao_teste3 = new GerenciadorDeTransacao(listaDeTodasTransacoes,"Celular", 5030.00);
 
-
-        exibirTodasTransacoes(listaDeTodasTransacoes);
-        System.out.println("INDIVIDUAL");
-        transacao_teste2.exibirListaDeTransacao();
-
-
-
-    }
+}
     public static void exibirTodasTransacoes(ArrayList<Transacao> listaDeTodasTransacoes) {
         if (listaDeTodasTransacoes.isEmpty()) {
             System.out.println("A lista está vazia");
         } else {
             for (Transacao transacao : listaDeTodasTransacoes) {
-
                 System.out.println(transacao.getCategoria());
                 System.out.println(transacao.getValor());
             }
         }
+    }
+    public static <T> void apagarElementoDaLista(int index, ArrayList<T> lista) {
+        lista.remove(index);
     }
 }
