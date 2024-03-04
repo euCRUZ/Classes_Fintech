@@ -1,9 +1,6 @@
 package br.com.classes_fintech.Testes;
 
-import br.com.classes_fintech.CasoDeUso.GerenciadorDeInvestimento;
-import br.com.classes_fintech.CasoDeUso.GerenciadorDeMeta;
-import br.com.classes_fintech.CasoDeUso.GerenciadorDeTransacao;
-import br.com.classes_fintech.CasoDeUso.GerenciadorDeUsuario;
+
 import br.com.classes_fintech.Entidades.Investimento;
 import br.com.classes_fintech.Entidades.Meta;
 import br.com.classes_fintech.Entidades.Transacao;
@@ -13,25 +10,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Usuario> listaDeusuariosCadastrados = new ArrayList<>();
+        ArrayList<Usuario> listaDeUsuariosCadastrados = new ArrayList<>();
         ArrayList<Transacao> listaDeTodasTransacoes = new ArrayList<>();
         ArrayList<Meta> listaDeMetas = new ArrayList<>();
         ArrayList<Investimento> listaDeInvestimentos = new ArrayList<>();
-
-        GerenciadorDeUsuario user1 = new GerenciadorDeUsuario("João", "cruz", "teste", "teste");
-        GerenciadorDeTransacao t1 = new GerenciadorDeTransacao(listaDeTodasTransacoes, "Alimento", 800);
-        GerenciadorDeMeta m1 = new GerenciadorDeMeta(listaDeMetas, "Carro", "01", "02", 500);
-        GerenciadorDeMeta m2 = new GerenciadorDeMeta(listaDeMetas, "Casa", "01", "02", 1000);
-
-        GerenciadorDeInvestimento i1 = new GerenciadorDeInvestimento("Bitcoin", 100.0, "01", 1.5);
-
-        listaDeusuariosCadastrados.add(user1);
-        listaDeInvestimentos.add(i1);
-
-        exibirTodosUsuarios(listaDeusuariosCadastrados); // lista vazia
-        exibirTodasTransacoes(listaDeTodasTransacoes);
-        exibirTodasMetas(listaDeMetas);
-        exibirTodosInvestimentos(listaDeInvestimentos); // lista vazia
 
     }
 
